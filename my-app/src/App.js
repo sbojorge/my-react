@@ -1,12 +1,11 @@
 
 import './App.css';
-import StatefulGreeting from './components/StatefulGreeting';
-
+import StatefulGreetingWithCount from './components/StatefulGreetingWithCount';
 
 function App() {
   return (
     <div className="App">
-      <StatefulGreeting greeting="I'm a statefulGreeting class component" name="Gati"/>
+      <StatefulGreetingWithCount />
     </div>
   );
 }
