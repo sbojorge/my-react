@@ -1,24 +1,23 @@
 import React, { Component } from 'react';
 import MethodsAsPropsChild from './MethodsAsPropsChild';
 
-export class MethodsAsPropsParent extends Component {
+class MethodsAsPropsParent extends Component {
     constructor(props) {
-      super(props)
-    
+      super(props);    
       this.state = {
          isLoggedIn: false,
       };
     }
 
     handleSignIn = () => {
-        this.setState = ({
+        this.setState({
             isLoggedIn: true,
         });
         console.log(this)
     };
 
     handleSignOut = () => {
-        this.setState = ({
+        this.setState({
             isLoggedIn: false,
         });
         
