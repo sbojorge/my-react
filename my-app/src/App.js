@@ -1,11 +1,13 @@
 
 import './App.css';
-import StatefulGreetingWithCount from './components/StatefulGreetingWithCount';
+import EventsFunctional from './components/EventsFunctional';
+import EventsClass from './components/EventsClass';
 
 function App() {
   return (
     <div className="App">
-      <StatefulGreetingWithCount />
+      <EventsFunctional />
+      <EventsClass />
     </div>
   );
 }
