@@ -22,13 +22,18 @@ export class ControlledForm extends Component {
     addComment = (event) => {
         this.setState({
             comment: event.target.value
+            
         })
+    }
+    handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(this.state)
     }
     render() {
         return (
             <div>
                 <h2>Please fill out the form below:</h2>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <div>
                         <label htmlFor='id-name'>Your name:</label>
                         <input onChange={this.handleChangeName} value={this.state.name} type='text' id='id-name' name='name' />
