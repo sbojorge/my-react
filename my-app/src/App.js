@@ -1,11 +1,13 @@
 
 import './App.css';
-import SearchBar1 from './components/SearchBar1';
+import ClassCounter from './components/ClassCounter';
+import HooksCounter from './components/HooksCounter';
 
 
 function App() {
   return <div className="App">
-      <SearchBar1 />
+      <HooksCounter />
+      <ClassCounter />
   </div>;
 }
 
